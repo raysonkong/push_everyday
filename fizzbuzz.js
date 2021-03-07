@@ -1,20 +1,28 @@
 // The classic Fizzbuzz
-const print = (num, word) => {
-    console.log(num + " " + word)
-}
 
+const min = 1, max = 100;
 
+const fizzbuzz = (min, max) => {
+    for ( let i = min; i <= max; i++) {
+        let divisibleBy3 = divisibleBy(i, 3);
+        let divisibleBy5 = divisibleBy(i, 5);
 
-const fizzbuzz = () => {
-    for (let i = 0; i <= 100; i ++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            print(i,'fizzbuzz');
-        } else if (i % 3 === 0) {
-            print(i, 'fizz')
-        } else if (i % 5 === 0) {
-            print(i, 'buzz')
+        if (divisibleBy5 && divisibleBy3) {
+            console.log(i + " fizzbuzz")
+        } else if (divisibleBy3) {
+            console.log(i + " fizz")
+        } else if (divisibleBy3) {
+            console.log(i + " buzz")
+        } else {
+            console.log(i)
         }
     }
 }
 
-fizzbuzz()
+
+const divisibleBy = (num, base) =>{
+    return num % base === 0;
+
+}
+
+fizzbuzz(min, max)

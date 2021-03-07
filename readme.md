@@ -9,3 +9,8 @@ refactoring: extracted the print statement to a function
 5 March 2021
 Nothing added and pushed for no good reason at all.
 
+7 Mar 2021
+Re-wrote fizzbuzz again
+Factored out (i % 3 === 0) and similiar to a function
+for maximum readibility
+
