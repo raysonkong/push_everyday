@@ -14,3 +14,6 @@ Re-wrote fizzbuzz again
 Factored out (i % 3 === 0) and similiar to a function
 for maximum readibility
 
+8 Mar 2021
+No updates
+
